@@ -1,5 +1,5 @@
 # Demo
-![demo](https://github.com/isaffathir/spotipy-neukivy/tree/master/images/demo.png)
+![demo](https://github.com/isaffathir/spotipy-neukivy/blob/master/images/demo.png)
 
 # Setup
 
