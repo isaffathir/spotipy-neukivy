@@ -1,0 +1,120 @@
+<Home>:
+    MDFloatLayout:
+        md_bg_color: [0.8, 0.8, 0.85]
+
+    MDLabel:
+        text: "S P O T I P Y"
+        halign: "center"
+        theme_text_color: "Custom"
+        text_color: 0.5, 0.2, 0.9, 1
+        pos_hint: {'center_x': 0.5,'center_y': 0.9}
+
+    NeuRoundedIconButton:
+        id: kiri
+        pos_hint: {'center_x': 0.2,'center_y': 0.9}
+        up_elevation: 2
+        icon: "dots-horizontal"
+        size: dp(50),dp(50)
+        font_size:'25dp'
+        comp_color: [0.8, 0.8, 0.85, 1]
+        on_release:
+            root.testsir()
+    
+    NeuRoundedIconButton:
+        pos_hint: {'center_x': 0.8,'center_y': 0.9}
+        up_elevation:2
+        icon: "playlist-music"
+        size: dp(50),dp(50)
+        font_size:'25dp'
+
+    NeuCard:
+        pos_hint: {'center_x': 0.5,'center_y': 0.58}
+        size_hint: .75, .5
+
+    MDCard:
+        radius: 20, 20, 20, 20
+        size_hint: .7, .35
+        pos_hint: {"center_x": .5, "center_y": .64}
+        md_bg_color: "#92a8d1"
+
+    NeuRoundedIconButton:
+        pos_hint: {'center_x': 0.75,'center_y': 0.4}
+        up_elevation:2
+        icon: "heart"
+        size: dp(50),dp(50)
+        font_size:'18dp'
+        text_color: "red"
+
+    NeuCard:
+        pos_hint: {'center_x': 0.23,'center_y': 0.27}
+        size_hint: .15, .04
+        MDLabel:
+            text: "00:00"
+            halign: "center"
+            theme_text_color: "Custom"
+            text_color: 0.5, 0.2, 0.9, 1
+        
+    NeuRoundedIconButton:
+        id: sp_button
+        pos_hint: {'center_x': 0.43,'center_y': 0.27}
+        up_elevation:2
+        icon: "shuffle"
+        size: dp(30),dp(30)
+        font_size:'20dp'
+
+    NeuRoundedIconButton:
+        id: sp_button
+        pos_hint: {'center_x': 0.57,'center_y': 0.27}
+        up_elevation:2
+        icon: "repeat-off"
+        size: dp(30),dp(30)
+        font_size:'20dp'
+
+    NeuCard:
+        pos_hint: {'center_x': 0.77,'center_y': 0.27}
+        size_hint: .15, .04
+        MDLabel:
+            text: "00:00"
+            halign: "center"
+            theme_text_color: "Custom"
+            text_color: 0.5, 0.2, 0.9, 1
+
+    NeuCard:
+        pos_hint: {'center_x': 0.5,'center_y': 0.2}
+        size_hint: .7, .05
+        MDSlider:
+            show_off: False
+            md_bg_color: "#2e3331"
+            hint: False
+            color: "#7aacb3"
+            thumb_color_active: 45, 147, 146, 1
+            thumb_color_inactive: 45, 147, 146, 1
+            track_color_active: .1, .1, .1, 1
+            track_color_inactive: .1, .1, .1, 1
+
+    NeuRoundedIconButton:
+        id: sp_button
+        pos_hint: {'center_x': 0.3,'center_y': 0.1}
+        up_elevation:2
+        icon: "skip-previous"
+        size: dp(50),dp(50)
+        font_size:'30dp'
+        
+    NeuRoundedIconButton:
+        id: sf_button
+        pos_hint: {'center_x': 0.7,'center_y': 0.1}
+        up_elevation:2
+        icon: "skip-next"
+        size: dp(50),dp(50)
+        font_size:'30dp'
+
+    NeuRoundedIconButton:
+        id: play_button
+        pos_hint: {'center_x': 0.5,'center_y': 0.1}
+        up_elevation:2
+        icon: "play"
+        size: dp(60),dp(60)
+        font_size:'40dp'
+        comp_color: [0.8, 0.8, 0.85, 1]
+        on_release:
+            root.play_music()
