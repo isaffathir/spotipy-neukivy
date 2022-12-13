@@ -1,3 +1,6 @@
+# Demo
+![demo](https://github.com/isaffathir/spotipy-neukivy/tree/master/images/demo.png)
+
 # Setup
 
 - Install Python 3.8.10
