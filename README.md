@@ -1,23 +1,15 @@
 # Demo
 ![demo](https://github.com/isaffathir/spotipy-neukivy/blob/master/images/demo.png)
 
-# Setup
+## Setup
+- [Python 3.9.13](https://www.python.org/downloads/release/python-3913/)
 
-- Install Python 3.8.10
-  
-  https://www.python.org/downloads/release/python-3810/
- 
 - Pip
-
+ ```bash
   pip install -r requirements.txt
-
-# Command start 
-
-- Windows 10 :
-
-  set "DEBUG=1" && python main.py --size=360x740
-
-
-- Linux / Mac :
-  
+ ```
+## Command start 
+  ```bash
+  kvhot . --top 40 --left 1080
+  ```
   DEBUG=1 python main.py --size=360x740
