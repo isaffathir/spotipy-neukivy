@@ -30,20 +30,36 @@
     NeuCard:
         pos_hint: {'center_x': 0.5,'center_y': 0.58}
         size_hint: .75, .5
+        orientation: 'vertical'
+        MDFloatLayout:
+            MDCard:
+                radius: 20, 20, 20, 20
+                size_hint: .9,.9
+                pos_hint: {"center_x": .5, "center_y": .5}
+                md_bg_color: "#92a8d1"
 
-    MDCard:
-        radius: 20, 20, 20, 20
-        size_hint: .7, .35
-        pos_hint: {"center_x": .5, "center_y": .64}
-        md_bg_color: "#92a8d1"
+        MDFloatLayout:
+            size_hint_y: .3
+            MDLabel:
+                text: "Happier than ever"
+                halign: "left"
+                font_size: dp(18)
+                pos_hint: {'center_x': 0.6,'center_y': 0.73}
 
-    NeuRoundedIconButton:
-        pos_hint: {'center_x': 0.75,'center_y': 0.4}
-        up_elevation:2
-        icon: "heart"
-        size: dp(50),dp(50)
-        font_size:'18dp'
-        text_color: "red"
+            MDLabel:
+                id: artist
+                text: "Billie Eilish"
+                halign: "left"
+                font_size: dp(13)
+                pos_hint: {'center_x': 0.6,'center_y': 0.45}
+
+            NeuRoundedIconButton:
+                pos_hint: {'center_x': 0.85,'center_y': 0.6}
+                up_elevation:2
+                icon: "heart"
+                size: dp(50),dp(50)
+                font_size:'18dp'
+                text_color: "red"
 
     NeuCard:
         pos_hint: {'center_x': 0.23,'center_y': 0.27}
@@ -55,7 +71,7 @@
             text_color: 0.5, 0.2, 0.9, 1
         
     NeuRoundedIconButton:
-        id: sp_button
+        id: shuffle_btn
         pos_hint: {'center_x': 0.43,'center_y': 0.27}
         up_elevation:2
         icon: "shuffle"
@@ -63,7 +79,7 @@
         font_size:'20dp'
 
     NeuRoundedIconButton:
-        id: sp_button
+        id: repeat_btn
         pos_hint: {'center_x': 0.57,'center_y': 0.27}
         up_elevation:2
         icon: "repeat-off"
@@ -82,15 +98,18 @@
     NeuCard:
         pos_hint: {'center_x': 0.5,'center_y': 0.2}
         size_hint: .7, .05
-        MDSlider:
-            show_off: False
-            md_bg_color: "#2e3331"
-            hint: False
-            color: "#7aacb3"
-            thumb_color_active: 45, 147, 146, 1
-            thumb_color_inactive: 45, 147, 146, 1
-            track_color_active: .1, .1, .1, 1
-            track_color_inactive: .1, .1, .1, 1
+        MDBoxLayout:
+            padding: dp(10)
+            MDSlider:
+                pos_hint: {'center_y': 0.65}
+                show_off: False
+                md_bg_color: "#2e3331"
+                hint: False
+                color: "#7aacb3"
+                thumb_color_active: 45, 147, 146, 1
+                thumb_color_inactive: 45, 147, 146, 1
+                track_color_active: .1, .1, .1, 1
+                track_color_inactive: .1, .1, .1, 1
 
     NeuRoundedIconButton:
         id: sp_button

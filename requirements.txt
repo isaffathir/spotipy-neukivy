@@ -1,2 +1,4 @@
 kivymd
 watchdog
+kvhot
+https://github.com/Guhan-SenSam/NeuKivy/archive/refs/heads/main.zip
